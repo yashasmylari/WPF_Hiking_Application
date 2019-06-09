@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<ArrayOfHill xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Hill>
+    <name>place0</name>
+    <duration>0</duration>
+    <distance>0</distance>
+    <difficulty>Easy</difficulty>
+    <image>/images/hill1.jpg</image>
+    <weather>79f</weather>
+    <diameter>40meter</diameter>
+    <elevation>555meter </elevation>
+    <prominence>365 metres</prominence>
+    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+  </Hill>
+  <Hill>
+    <name>place1</name>
+    <duration>1</duration>
+    <distance>10</distance>
+    <difficulty>Easy</difficulty>
+    <image>/images/hill1.jpg</image>
+    <weather>79f</weather>
+    <diameter>40meter</diameter>
+    <elevation>555meter </elevation>
+    <prominence>365 metres</prominence>
+    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+  </Hill>
+  <Hill>
+    <name>place2</name>
+    <duration>2</duration>
+    <distance>20</distance>
+    <difficulty>Easy</difficulty>
+    <image>/images/hill1.jpg</image>
+    <weather>79f</weather>
+    <diameter>40meter</diameter>
+    <elevation>555meter </elevation>
+    <prominence>365 metres</prominence>
+    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+  </Hill>
+  <Hill>
+    <name>place3</name>
+    <duration>3</duration>
+    <distance>30</distance>
+    <difficulty>Easy</difficulty>
+    <image>/images/hill1.jpg</image>
+    <weather>79f</weather>
+    <diameter>40meter</diameter>
+    <elevation>555meter </elevation>
+    <prominence>365 metres</prominence>
+    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+  </Hill>
+  <Hill>
+    <name>place4</name>
+    <duration>4</duration>
+    <distance>40</distance>
+    <difficulty>Easy</difficulty>
+    <image>/images/hill1.jpg</image>
+    <weather>79f</weather>
+    <diameter>40meter</diameter>
+    <elevation>555meter </elevation>
+    <prominence>365 metres</prominence>
+    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+  </Hill>
+</ArrayOfHill>
