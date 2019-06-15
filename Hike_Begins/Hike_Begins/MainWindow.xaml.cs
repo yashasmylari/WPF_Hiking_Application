@@ -23,46 +23,26 @@ namespace Hike_Begins
     {
         public static ObservableCollection<Hill> trekSpotsDetails = new ObservableCollection<Hill>();
         ObservableCollection<Hill> trekSpots;
-        private string filter;
-
-        private bool langEn = true;
-        System.Globalization.CultureInfo english;
-        System.Globalization.CultureInfo kanada;
 
 
         public MainWindow()
         {
-            english = new System.Globalization.CultureInfo("");
-            kanada = new System.Globalization.CultureInfo("kn-IN");
-
-            System.Threading.Thread.CurrentThread.CurrentUICulture = kanada;
-
             InitializeComponent();
             removeMethod();
+            trekSpots = TestStorge.ReadXml<ObservableCollection<Hill>>("trekSpots.xml");
+            var combolist = trekSpots.Select(x => x.difficulty).Distinct();
+            Combo_Difficulty.ItemsSource = combolist;
             Grd_spots.ItemsSource = trekSpots;
             
         }
 
-        public void changeLanguage()
-        {
-            if(langEn)
-            {
-                System.Threading.Thread.CurrentThread.CurrentUICulture = kanada;
-                langEn = false;
-            }
-            else
-            {
-                System.Threading.Thread.CurrentThread.CurrentUICulture = english;
-                langEn = true;
-            }
-        }
-
         private void removeMethod()
         {
+           
             var trek = new ObservableCollection<Hill>();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 20; i++)
             {
-                trek.Add(new Hill { name = "place" + i, difficulty = "Easy", duration=i , image ="/images/hill1.jpg", distance = i*10 , weather = "79f", diameter = "40meter", elevation= "555meter ", prominence= "365 metres", description= "lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs" });
+                trek.Add(new Hill { name = "place" + i, difficulty = "Easy", duration= i + "Hours", image ="/images/hill1.jpg", distance = i*10 + "Km" , Uphill= "555meter ", mapimage = "/images/hill1.jpg", hike_speed = "365 metres", description= "About the place"});
             }
             trekSpots = trek;
         }
@@ -71,13 +51,7 @@ namespace Hike_Begins
 
         private void Btn_Go_Click(object sender, RoutedEventArgs e)
         {
-            //trekSpotsDetails.Clear();
-
-            //Hill selected = (Hill)Grd_spots.SelectedItem;
-            //Tbx_name.Text = selected.name;
-            //W_trekDetails detailPage = new W_trekDetails();
-            //detailPage.Show();
-            //trekSpotsDetails.Add(selected);
+            trekSpotsDetails.Clear();
         }
 
 
@@ -85,7 +59,7 @@ namespace Hike_Begins
         {
             if(Grd_spots.SelectedItem!=null) { 
                 Tbx_name.Text = ((Hill)Grd_spots.SelectedItem).name;
-                Tbx_Search_Difficulty.Text = ((Hill)Grd_spots.SelectedItem).difficulty;
+                ///Tbx_Search_Difficulty.Text = ((Hill)Grd_spots.SelectedItem).difficulty;
                 Tbx_Search_Duration.Text = ((Hill)Grd_spots.SelectedItem).duration.ToString();
             }
         }
@@ -98,19 +72,22 @@ namespace Hike_Begins
             detailPage.Show();
 
         }
-        //this.Visibility = Visibility.Visible;
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             removeMethod();
-
-            TestStorge.WriteXml<ObservableCollection<Hill>>(trekSpots,"trekSpots.xml");
+            trekSpots = TestStorge.ReadXml<ObservableCollection<Hill>>("trekSpots.xml");
+            //TestStorge.WriteXml<ObservableCollection<Hill>>(trekSpots, "trekSpots.xml");
         }
 
-        private void Tbx_filter_TextChanged(object sender, TextChangedEventArgs e)
+        private void Tbx_filter_TextChanged(object sender, KeyEventArgs e)
         {
+            filterSearchPlace();
+        }
+
+        public void filterSearchPlace() {
             string filterName = Tbx_name.Text.ToLower();
-            string filterDifficulty = Tbx_Search_Difficulty.Text.ToLower();
+            string filterDifficulty = Combo_Difficulty.SelectedItem == null ? "" : Combo_Difficulty.SelectedItem.ToString().ToLower();
             string filterDuration = Tbx_Search_Duration.Text.ToLower();
 
             if (filterName == "" && filterDifficulty == "" && filterDuration == "")
@@ -121,31 +98,14 @@ namespace Hike_Begins
             {
                 var results = getResult(filterName, filterDifficulty, filterDuration);
                 ObservableCollection<Hill> oc = new ObservableCollection<Hill>(results);
-                Grd_spots.ItemsSource = results;
+                Grd_spots.ItemsSource = oc;
             }
-        }
-
-
-        private void English_Language_Radio(object sender, RoutedEventArgs e)
-        {
-            Console.WriteLine("English Selected Logic");
-            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("");
-            langEn = true;
-            InitializeComponent();
-        }
-
-        private void Kannada_Language_Radio(object sender, RoutedEventArgs e)
-        {
-            Console.WriteLine("Kanada Selected Logic");
-            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("kn-IN");
-            langEn = true;
-            InitializeComponent();
         }
 
         private void btn_Search_Click(object sender, RoutedEventArgs e)
         {
             Tbx_name.Text = "";
-            Tbx_Search_Difficulty.Text = "";
+            //Tbx_Search_Difficulty.Text = "";
             Tbx_Search_Duration.Text = "";
         }
 
@@ -207,6 +167,11 @@ namespace Hike_Begins
                        select s;
             }
             return null;
+        }
+
+        private void Combo_Difficulty_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            filterSearchPlace();
         }
     }
 }

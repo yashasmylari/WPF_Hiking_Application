@@ -1,63 +1,210 @@
 <?xml version="1.0"?>
 <ArrayOfHill xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Hill>
-    <name>place0</name>
-    <duration>0</duration>
-    <distance>0</distance>
-    <difficulty>Easy</difficulty>
-    <image>/images/hill1.jpg</image>
-    <weather>79f</weather>
-    <diameter>40meter</diameter>
-    <elevation>555meter </elevation>
-    <prominence>365 metres</prominence>
-    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+    <name>Basteibrücke – Schwedenlöcher from Rathen</name>
+    <duration>02:27 Hours</duration>
+    <distance>4.91 mi</distance>
+    <difficulty>Intermediate</difficulty>
+    <image>/images/startingBasteibrucke-Schwedenlocher.jpg</image>
+    <mapimage>/images/Basteibrücke – Schwedenlöcher-maps.PNG</mapimage>
+    <Uphill>950 ft </Uphill>
+    <hike_speed>2.0 mph</hike_speed>
+    <description>Intermediate Hiking Tour. Good fitness required. Easily-accessible paths. Suitable for all skill levels. At 1.21mi you will reach Blick auf die Elbe, 1.56mi you will reach Basteiaussicht,4.15mi you will reach Kurort Rathen after that Destination will be reached. 
+	</description>
+    <locations>https://www.google.com/maps/place/Alte+Elbe+Blick/@52.1361012,11.660436,17z/data=!3m1!4b1!4m5!3m4!1s0x47af58b1deb46a79:0x4669187eb509bb64!8m2!3d52.1361012!4d11.6626247</locations>
   </Hill>
   <Hill>
-    <name>place1</name>
-    <duration>1</duration>
-    <distance>10</distance>
+    <name>Basteibrücke – Schwedenlöcher Loop from Kurort Rathen</name>
+    <duration>01:59 Hours</duration>
+    <distance>3.93 mi</distance>
     <difficulty>Easy</difficulty>
-    <image>/images/hill1.jpg</image>
-    <weather>79f</weather>
-    <diameter>40meter</diameter>
-    <elevation>555meter </elevation>
-    <prominence>365 metres</prominence>
-    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+    <image>/images/Basteibrücke – Schwedenlöcher-kurort1.jpg</image>
+    <mapimage>/images/Basteibrücke – Schwedenlöcher2-kurort-maps.PNG</mapimage>
+    <Uphill>775 ft </Uphill>
+    <hike_speed>2.0 mph</hike_speed>
+    <description>Easy hike. Great for any fitness level. Easily-accessible paths. Suitable for all skill levels. The starting point of the Tour is accessible with public transport. The tour includes crossing by ferry. At 0.33mi you will reach Kurort Rathen, At 0.97mi you will reach Blick von der Bastei auf das Elbtal, At 1.01mi you will reach Basteibrücke, At 1.97mi you will reach Schwedenlöcher and Destination Kurort Rathen Train Station
+	</description>
+    <locations>https://www.google.com/maps/place/Rathen/@50.9523762,14.0394884,13z/data=!3m1!4b1!4m5!3m4!1s0x4709bb2c61ddbcf9:0x421b1cb4288e8f0!8m2!3d50.9588487!4d14.0833004</locations>
   </Hill>
   <Hill>
-    <name>place2</name>
-    <duration>2</duration>
-    <distance>20</distance>
-    <difficulty>Easy</difficulty>
-    <image>/images/hill1.jpg</image>
-    <weather>79f</weather>
-    <diameter>40meter</diameter>
-    <elevation>555meter </elevation>
-    <prominence>365 metres</prominence>
-    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+    <name>Blick übers Tal – Rotthäuser Bachtal Loop from Start</name>
+    <duration>03:17 Hours</duration>
+    <distance>7.35 mi</distance>
+    <difficulty>Intermediate</difficulty>
+    <image>/images/Blick übers Tal – Rotthäuser Bachtal1.jpg</image>
+    <mapimage>/images/Blick übers Tal – Rotthäuser Bachtal Loop from Start.PNG</mapimage>
+    <Uphill>700 ft </Uphill>
+    <hike_speed>2.2 mph</hike_speed>
+    <description>Intermediate Hiking Tour. Good fitness required. Easily-accessible paths. Suitable for all skill levels. The starting point of the Tour is accessible with public transport. Starts with Haus Morp Bus station, At 429yd Park Morp, At 1.26mi you will reach Gut Papendelle, At 1.34mi you will reach Teich Gut Pappendelle, At 1.47mi you will reach Blick übers Tal, At 3.29mi you will reach Wunderschönes Tal am See and Haus Morp Destination </description>
+    <locations>https://www.google.com/maps/place/Fabershof+2,+40699+Erkrath/@51.2264733,6.8941567,17z/data=!3m1!4b1!4m5!3m4!1s0x47b8cc27df12159f:0x49d96c66b3be94fa!8m2!3d51.22647!4d6.89634</locations>
   </Hill>
   <Hill>
-    <name>place3</name>
-    <duration>3</duration>
-    <distance>30</distance>
-    <difficulty>Easy</difficulty>
-    <image>/images/hill1.jpg</image>
-    <weather>79f</weather>
-    <diameter>40meter</diameter>
-    <elevation>555meter </elevation>
-    <prominence>365 metres</prominence>
-    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+    <name>Blick übers Tal – Rotthäuser Bachtal</name>
+    <duration>02:58 Hours</duration>
+    <distance>6.66 mi</distance>
+    <difficulty>Intermediate</difficulty>
+    <image>/images/place3Blick übers Tal – Rotthäuser Bachtal.jpg</image>
+    <mapimage>/images/Blick übers Tal – Rotthäuser Bachtal.PNG</mapimage>
+    <Uphill>600 ft</Uphill>
+    <hike_speed>2.2 mph</hike_speed>
+    <description>Intermediate Hiking Tour. Good fitness required. Easily-accessible paths. 
+	Suitable for all skill levels. 
+	->The starting point of the Tour is accessible with public transport.
+	-> Starts with Von-Gahlen-Straße Bus station, At 2.97mi Gut Papendelle 
+	-> At 3.05mi you will reach Rotthäuser Bachtal 
+	-> At 3.14mi you will reach See im Rotthäuser Bachtal 
+	-> At 5.00mi you will reach Durchgang bei Schäpershof 
+	-> Von-Gahlen-Straße Destination</description>
+    <locations>https://www.google.com/maps/place/Benderstra%C3%9Fe+74,+40625+D%C3%BCsseldorf/@51.237694,6.8527288,17z/data=!3m1!4b1!4m5!3m4!1s0x47b8c9516299983d:0xf40e9b87c914ad34!8m2!3d51.237694!4d6.8527288</locations>
   </Hill>
   <Hill>
-    <name>place4</name>
-    <duration>4</duration>
-    <distance>40</distance>
-    <difficulty>Easy</difficulty>
-    <image>/images/hill1.jpg</image>
-    <weather>79f</weather>
-    <diameter>40meter</diameter>
-    <elevation>555meter </elevation>
-    <prominence>365 metres</prominence>
-    <description>lgydfgui;earguehrgeurerber efhurkfberfrrrrrrrrrrrrrrrrrrrrrrrrrbwkhjfwf w wefwf waf fwawafvwrefaerfaerfearrrrrrrrrrrrrrrrrgergeargv aergaerrrrrrrrrrgggaergergaergergvaerfarfaerfvfv errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. ergwgerrrrrrrrrrrrrrrrrrrrrrrrgwerwwwwwwwwwwwwvfs</description>
+    <name>Wupper – Burg Loop from Solingen-Schaberg</name>
+    <duration>04:58 Hours</duration>
+    <distance>10.4 mi</distance>
+    <difficulty>Intermediate</difficulty>
+    <image>/images/Wupper – Burg Loop from Solingen-Schaberg1.jpg</image>
+    <mapimage>/images/Wupper – Burg Loop from Solingen-Schaberg.PNG</mapimage>
+    <Uphill>1,475 ft </Uphill>
+    <hike_speed>2.1 mph</hike_speed>
+    <description>Intermediate Hiking Tour. Good fitness required. Mostly accessible paths. 
+	Sure-footedness required. 
+	->The starting point of the Tour is accessible with public transport.
+	-> Starts with Solingen-Schaberg train station, At 0.71mi you will reach Aussichtsturm Klingenpfad 
+	-> At 3.65mi you will reach Wupper 
+	-> At 6.87 mi you will reach Schöner Weg 
+	-> At 7.16 mi you will reach Schloss Burg  
+	-> At 7.74 mi you will reach Friedhof and Kirche bei Unterburg 
+	-> At 10.4mi Solingen-Schaberg Destination</description>
+    <locations>https://www.google.com/maps/place/Schaberg+6,+42659+Solingen/@51.1635333,7.1279846,17z/data=!3m1!4b1!4m5!3m4!1s0x47b8d50dc1128311:0xd492b85f376dc05d!8m2!3d51.1635333!4d7.1279846</locations>
   </Hill>
+  <Hill>
+    <name>Wupper – Burg Loop from Talsperrenstraße</name>
+    <duration>03:19 Hours</duration>
+    <distance>7.08 mi</distance>
+    <difficulty>Intermediate</difficulty>
+    <image>/images/Wupper – Burg Loop from Talsperrenstraße.jpg</image>
+    <mapimage>/images/Wupper – Burg Loop from Talsperrenstraße.PNG</mapimage>
+    <Uphill>925 ft</Uphill>
+    <hike_speed>2.1 mph</hike_speed>
+    <description>Intermediate Hiking Tour. Good fitness required. Mostly accessible paths. 
+	Sure-footedness required. 
+	->The starting point of the Tour is right next to a parking lot.
+	-> Starts with Wanderparkplatz, At 2.88 mi you will reach Insel in der Wupper 
+	-> At 5.73 mi you will reach Friedhof and Kirche bei Unterburg 
+	-> At 6.31 mi you will reach Burg 
+	-> At 10.4mi Schloss Burg Destination</description>
+    <locations>https://www.google.com/maps/place/Burg+Castle/@51.1376917,7.1528816,17z/data=!3m1!4b1!4m5!3m4!1s0x47b8d557e7f0de8b:0xb24f38654964d00e!8m2!3d51.1376917!4d7.1528816</locations>
+  </Hill>
+  <Hill>
+    <name>Trasshöhle – Wasserfall Wolfsschlucht Loop from Nickenich</name>
+    <duration>03:26 Hours</duration>
+    <distance>7.37 mi</distance>
+    <difficulty>Moderate</difficulty>
+    <image>/images/Trasshöhle – Wasserfall Wolfsschlucht Loop from Nickenich.jpg</image>
+    <mapimage>/images/Trasshöhle – Wasserfall Wolfsschlucht Loop from Nickenich.PNG</mapimage>
+    <Uphill>975 ft</Uphill>
+    <hike_speed>2.1 mph</hike_speed>
+    <description>Moderate Hiking Tour. Good fitness required. Mostly accessible paths. 
+	Sure-footedness required. 
+	->The starting point of the Tour is right next to a parking lot.
+	-> Starts with Parkplatz Bergwege, At 3.34 mi you will reach Insel in der Aussicht über das Tal 
+	-> At 4.71 mi you will reach Höhle 
+	-> At 5.85 mi you will reach Wasserfall in der Wolfsschlucht 
+	-> At 10.4mi Wasserfall Wolfsschlucht Destination</description>
+    <locations>https://www.google.com/maps/place/Wolfschlucht/@49.4223337,4.5511608,6z/data=!4m8!1m2!2m1!1sWolfsschlucht!3m4!1s0x4797f17e5f1c7983:0x32c6853bb7d6bac0!8m2!3d49.4223337!4d9.0335827</locations>
+  </Hill>
+  <Hill>
+    <name>Burgruine Neudahn – Hexenpilz Loop from Moosbachtal</name>
+    <duration>04:17 Hours</duration>
+    <distance>9.46 mi</distance>
+    <difficulty>Intermediate</difficulty>
+    <image>/images/Burgruine Neudahn – Hexenpilz Loop from Moosbachtal1.jpg</image>
+    <mapimage>/images/Burgruine Neudahn – Hexenpilz Loop from Moosbachtal.PNG</mapimage>
+    <Uphill>1,000 ft</Uphill>
+    <hike_speed>2.1 mph</hike_speed>
+    <description>Intermediate Hiking Tour. Good fitness required. Mostly accessible paths. 
+	Sure-footedness required.
+	-> Starts with Moosbachtal, At 386yd Dahner Felsentor 
+	-> At 4.71 mi you will reach Burgruine Neudahn 
+	-> At 5.85 mi you will reach Hexenpilz 
+	-> At 10.4mi Wasserfall Lämmerfels Destination</description>
+    <locations>https://www.google.com/maps/place/Neudahner+Weiher,+66994+Dahn/@49.1629002,7.7533122,17z/data=!3m1!4b1!4m5!3m4!1s0x479663c28b249e69:0x5355deafc40be4b7!8m2!3d49.1629002!4d7.7533122</locations>
+  </Hill>
+  <Hill>
+    <name>Bodetal – La Viershöhe HWN 72 Loop from Hütteplatz</name>
+    <duration>07:28 Hours</duration>
+    <distance>16.1 mi</distance>
+    <difficulty>Tough</difficulty>
+    <image>/images/hill1.jpg</image>
+    <mapimage>/images/hill1.jpg</mapimage>
+    <Uphill>2,075 ft </Uphill>
+    <hike_speed>2.2 mph</hike_speed>
+    <description>Expert Hiking Tour. Very good fitness required. Mostly accessible paths. 
+	Sure-footedness required.
+	The starting point of the Tour is accessible with public transport.
+	-> Starts with Moosbachtal, At 386yd you will reach Dahner Felsentor 
+	-> At 4.71 mi you will reach Sonnenklippe HWN 69 
+	-> At 8.77 mi you will reach Bodetal 
+	-> At 10.4mi Ausblick Hexentanzplatz 
+	Altenbrak Brauner Hirsch Destination</description>
+    <locations>https://www.google.com/maps/place/H%C3%BCttepl.+13,+38889+Thale/@51.72633,10.94377,17z/data=!3m1!4b1!4m5!3m4!1s0x47a5a7064c667b0b:0xd16d69e945fe782!8m2!3d51.72633!4d10.94377</locations>
+  </Hill>
+  <Hill>
+    <name>Edmundsklamm – Edmundsklamm Loop from Schöna</name>
+    <duration>05:28 Hours</duration>
+    <distance>12.0 mi</distance>
+    <difficulty>Tough</difficulty>
+    <image>/images/hill1.jpg</image>
+    <mapimage>/images/hill1.jpg</mapimage>
+    <Uphill>1,300 ft </Uphill>
+    <hike_speed>2.2 mph</hike_speed>
+    <description>Expert Hiking Tour. Very good fitness required. Easily-accessible paths. 
+	Suitable for all skill levels. 
+	The starting point of the Tour is accessible with public transport.The tour includes crossing by ferry.
+	-> Starts with Moosbachtal, At 386yd you will reach Zugang zum Prebischtor 
+	-> At 4.71 mi you will reach Prebischtor 
+	-> At 8.77 mi you will reach Adlerhorst am Prebischtor 
+	-> At 10.4mi Ausblick Eingang Wilde Klamm 
+	Edmundsklamm Destination</description>
+    <locations>https://www.google.com/maps/place/Prav%C4%8Dick%C3%A1+Archway/@50.863838,14.2506883,13z/data=!4m8!1m2!2m1!1sH%C5%99ensko+170,+407+17+H%C5%99ensko,+Czechia!3m4!1s0x4709a0456d3be96d:0x48f74ac67898a73a!8m2!3d50.8839207!4d14.2815093</locations>
+  </Hill>
+  <Hill>
+    <name>Am Feldsee – Feldsee Loop from Dr.-Pilet-Spur</name>
+    <duration>04:09 Hours</duration>
+    <distance>7.71 mi</distance>
+    <difficulty>Tough</difficulty>
+    <image>/images/Am Feldsee – Feldsee Loop from Dr.-Pilet-Spur.jpg</image>
+    <mapimage>/images/Am Feldsee – Feldsee Loop from Dr.-Pilet-Spur.PNG</mapimage>
+    <Uphill>1,575 ft </Uphill>
+    <hike_speed>2.2 mph</hike_speed>
+    <description>Good fitness required. Mostly accessible paths. Sure-footedness required. 
+	The starting point of the Tour is accessible with public transport.
+	-> Starts with Feldberg Feldbergerhof, At 386yd Bismarckdenkmal auf dem Seebuck 
+	-> At 4.71 mi you will reach Seebuck 
+	-> At 8.77 mi you will reach Feldsee 
+	-> At 10.4mi Feldberg Feldbergerhof 
+	Destination</description>
+    <locations>https://www.google.com/maps/place/Hagen/@47.7748981,8.5501004,14z/data=!3m1!4b1!4m5!3m4!1s0x479080b3666aafe1:0x43dc2654ac5b92d2!8m2!3d47.7749!4d8.56761</locations>
+  </Hill>
+  <Hill>
+    <name>Kreuz des deutschen Ostens – Rabenklippe Loop from Nordhäuser Straße</name>
+    <duration>03:24 Hours</duration>
+    <distance>7.24 mi</distance>
+    <difficulty>Moderate</difficulty>
+    <image>/images/Kreuz des deutschen Ostens – Rabenklippe Loop from Nordhäuser Straße1.jpg</image>
+    <mapimage>/images/Kreuz des deutschen Ostens – Rabenklippe Loop from Nordhäuser Straße.PNG</mapimage>
+    <Uphill>1,000 ft </Uphill>
+    <hike_speed>2.3 mph</hike_speed>
+    <description>Moderate Hiking Tour. Good fitness required. Easily-accessible paths. 
+	Suitable for all skill levels.
+	The starting point of the Tour is accessible with public transport.
+	-> Starts with Hotel Seela, At 386yd Kreuz des deutschen Ostens 
+	-> At 4.71 mi Luchsgehege an den Rabenklippen 
+	-> At 8.77 mi Rabenklippe 
+	-> At 10.4mi Gasthaus Rabenklippe HWN 170 
+	Hotel Seela Destination</description>
+    <locations>https://www.google.com/maps/place/B4+12,+38667+Bad+Harzburg/@51.8677354,10.557812,17z/data=!3m1!4b1!4m5!3m4!1s0x47a514ddbada5281:0x445894c7e814b378!8m2!3d51.8677354!4d10.557812</locations>
+  </Hill>
+  
+  
 </ArrayOfHill>

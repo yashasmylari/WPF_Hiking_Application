@@ -23,20 +23,27 @@ namespace Hike_Begins
     {
         Hill hill;
         Window mainWindow;
-        int originalWidth;
-        int originalHeight;
+        private Uri locUri;
+        private int count = 1;
+       
 
         public W_trekDetails( Hill data, Window mw )
         {
             mainWindow = mw;
             InitializeComponent();
             hill = data;
-            originalWidth = (int) Ibx_img.Width;
-            originalHeight = (int) Ibx_img.Height;
-            NameOfPlace.Content = data.name;
+            NameOfPlace.Content = hill.name;
+            NameOfPlace1.Content = hill.name;
+            Tbx_distance.Text = hill.distance;
+            Tbx_uphill.Text = hill.Uphill;
+            Tbx_downhill.Text = hill.hike_speed;
+            Tbx_description.Text = hill.description;
+            locUri = new Uri(hill.locations);
+            Wbx_locations.Source =  locUri;
+            Img_gallery.Visibility = Visibility.Visible;
+            loadImage(count++);
+            manageImageScrollButton();
         }
-
-
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -51,36 +58,61 @@ namespace Hike_Begins
 
 
 
-        private void expandImage1X(object sender, RoutedEventArgs e)
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            
+        }
 
-            Ibx_img.Width = originalWidth;
-            Ibx_img.Height = originalHeight;
+        private void WebBrowser_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.N && e.KeyboardDevice.Modifiers == ModifierKeys.Control)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            if (count > 0 )
+                loadImage(count--);
+            // Logic to hide the back button when it is the first image
+            manageImageScrollButton();
 
         }
 
-        private void expandImage2X(object sender, RoutedEventArgs e)
+        private void Button_Click_Next(object sender, RoutedEventArgs e)
         {
-
-            int widthNew = originalWidth * 2;
-            int heightNew = originalHeight * 2;
-
-            Ibx_img.Width = widthNew;
-            Ibx_img.Height = heightNew;
-
+            if (count<3)
+                loadImage(count++);
+            // Logic to hide the next button when it is the last image
+            manageImageScrollButton();
         }
 
-
-        private void expandImage3X(object sender, RoutedEventArgs e)
-        {
-
-            int widthNew = originalWidth * 3;
-            int heightNew = originalHeight * 3;
-
-            Ibx_img.Width = widthNew;
-            Ibx_img.Height = heightNew;
-
+        // Function to manage the visiblility of the back and the next button
+        private void manageImageScrollButton() {
+            btnGallery_ScrollBack.Visibility = (count >= 2) ? Visibility.Visible : Visibility.Hidden;
+            btnGallery_ScrollNext.Visibility = (count <= 2) ? Visibility.Visible : Visibility.Hidden;
         }
+
+        // Function to load the image
+        private void loadImage(int count) {
+            BitmapImage logo = new BitmapImage();
+            logo.BeginInit();
+            logo.UriSource = new Uri("C:/Users/YASHAS/source/repos/Hike_Begins/HillImages/" + hill.name + "/" + count + ".jpg");
+            logo.EndInit();
+            Img_gallery.Source = logo;
+        }
+
+        private void Ibx_img12_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            tabcontrol1.SelectedIndex = 2;
+        }
+        private void Ibx_img1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            tabcontrol1.SelectedIndex = 1;
+        }
+
+        
     }
 
 }

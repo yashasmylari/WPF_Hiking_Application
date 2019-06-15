@@ -56,11 +56,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Properties\Resources.kn-IN.Designer.cs">
-      <DependentUpon>Resources.kn-IN.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="TestStorge.cs" />
     <Compile Include="W_trekDetails.xaml.cs">
       <DependentUpon>W_trekDetails.xaml</DependentUpon>
@@ -97,10 +92,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Properties\Resources.kn-IN.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.kn-IN.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -118,6 +109,41 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\hill1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\startingBasteibrucke-Schwedenlocher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Basteibrücke – Schwedenlöcher-maps.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Basteibrücke – Schwedenlöcher-kurort1.jpg" />
+    <Resource Include="images\Basteibrücke – Schwedenlöcher2-kurort-maps.PNG" />
+    <Resource Include="images\Blick übers Tal – Rotthäuser Bachtal Loop from Start.PNG" />
+    <Resource Include="images\Blick übers Tal – Rotthäuser Bachtal.PNG" />
+    <Resource Include="images\Blick übers Tal – Rotthäuser Bachtal1.jpg" />
+    <Resource Include="images\place3Blick übers Tal – Rotthäuser Bachtal.jpg" />
+    <Resource Include="images\Wupper – Burg Loop from Solingen-Schaberg.PNG" />
+    <Resource Include="images\Wupper – Burg Loop from Solingen-Schaberg1.jpg" />
+    <Resource Include="images\Wupper – Burg Loop from Talsperrenstraße.jpg" />
+    <Resource Include="images\Wupper – Burg Loop from Talsperrenstraße.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Trasshöhle – Wasserfall Wolfsschlucht Loop from Nickenich.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\back.png" />
+    <Resource Include="images\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Trasshöhle – Wasserfall Wolfsschlucht Loop from Nickenich.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Burgruine Neudahn – Hexenpilz Loop from Moosbachtal.PNG" />
+    <Resource Include="images\Burgruine Neudahn – Hexenpilz Loop from Moosbachtal1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Kreuz des deutschen Ostens – Rabenklippe Loop from Nordhäuser Straße1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

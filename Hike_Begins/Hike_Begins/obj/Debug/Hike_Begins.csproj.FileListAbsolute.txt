@@ -15,6 +15,3 @@ C:\Users\YASHAS\source\repos\Hike_Begins\Hike_Begins\obj\Debug\Hike_Begins.exe
 C:\Users\YASHAS\source\repos\Hike_Begins\Hike_Begins\obj\Debug\Hike_Begins.pdb
 C:\Users\YASHAS\source\repos\Hike_Begins\Hike_Begins\obj\Debug\W_trekDetails.g.cs
 C:\Users\YASHAS\source\repos\Hike_Begins\Hike_Begins\obj\Debug\W_trekDetails.baml
-C:\Users\YASHAS\source\repos\Hike_Begins\Hike_Begins\bin\Debug\kn-IN\Hike_Begins.resources.dll
-C:\Users\YASHAS\source\repos\Hike_Begins\Hike_Begins\obj\Debug\Hike_Begins.Properties.Resources.kn-IN.resources
-C:\Users\YASHAS\source\repos\Hike_Begins\Hike_Begins\obj\Debug\kn-IN\Hike_Begins.resources.dll

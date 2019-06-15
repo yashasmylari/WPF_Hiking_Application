@@ -8,23 +8,96 @@
         mc:Ignorable="d" 
         Closing="trekWindowClosingEvent"
         Title="W_trekDetails" Height="700" Width="850">
-  <Grid>
-    <Image x:Name="Ibx_img" HorizontalAlignment="Left" Height="204" Margin="30,46,0,0" VerticalAlignment="Top" Width="250" 
-               RenderTransformOrigin="0.513,0.54" Source="{Binding image}" RenderOptions.BitmapScalingMode="Fant" />
-    <Label x:Name="NameOfPlace" Content="Name Of Place" HorizontalAlignment="Left" Margin="177,15,0,0" VerticalAlignment="Top" Width="605" FontSize="14" FontWeight="Bold"
-         />
-    <!-- <Image x:Name="Ibx_img_Copy" HorizontalAlignment="Left" Height="204" Margin="352,65,0,0" VerticalAlignment="Top" Width="250" 
-               RenderTransformOrigin="0.513,0.54" Source="{Binding image}"  /> -->
-    <StackPanel HorizontalAlignment="Left" Height="251" VerticalAlignment="Top" Width="570" Margin="32,290,0,0"/>
-    <Button Content="1x" HorizontalAlignment="Left" Margin="30,18,0,0" VerticalAlignment="Top" Width="38"
-            Click="expandImage1X"/>
-    <Button Content="2x" HorizontalAlignment="Left" Margin="68,18,0,0" VerticalAlignment="Top" Width="40"
-            Click="expandImage2X"/>
-    <Button Content="3x" HorizontalAlignment="Left" Margin="108,18,0,0" VerticalAlignment="Top" Width="40"
-      Click="expandImage3X" Height="20"/>
-    <!--<Label x:Name=" " HorizontalAlignment="Left" Margin="30,279,0,0" VerticalAlignment="Top" Height="33" Width="58" Source="{Binding description}" />-->
+    <Grid>
+
+        <TabControl Name="tabcontrol1" SelectionChanged="TabControl_SelectionChanged" HorizontalAlignment="Right" Width="840">
+
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="18" Text="Details" />
+                    </StackPanel>
+                </TabItem.Header>
+
+                <Grid>
+                    <ScrollViewer>
+                        <StackPanel  HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Width="758" Height="270" Margin="42,304,0,0">
+                            <Label Width="192" HorizontalAlignment="Left" Content="Hiking Information :" FontSize="18" FontWeight="Bold" Margin="-5,0,0,0" Height="40"/>
+                            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                                <TextBlock FontSize="16" FontWeight="Bold" Text="Distance" Height="29" Width="200"/>
+                                <TextBlock  FontSize="16" x:Name="Tbx_distance" Margin="10,0,0,0"/>
+                            </StackPanel>
+
+                            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                                <TextBlock FontSize="16" FontWeight="Bold" Text="Uphill" Height="29" Width="200"/>
+                                <TextBlock FontSize="16" x:Name="Tbx_uphill" Margin="10,0,0,0" />
+                            </StackPanel>
+
+                            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                                <TextBlock FontSize="16" FontWeight="Bold" Text="Hike speed" Height="29" Width="200"/>
+                                <TextBlock FontSize="16" x:Name="Tbx_downhill" Margin="10,0,0,0" />
+                            </StackPanel>
+                            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                                <TextBlock FontSize="16" FontWeight="Bold" Text="Description" VerticalAlignment="Top" Height="29" Width="200"/>
+                                <TextBlock TextWrapping="Wrap" Width="550" FontSize="16" x:Name="Tbx_description" Height="108" Margin="10,0,0,0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                    <Image  x:Name="Ibx_img1" HorizontalAlignment="Left" Stretch="Fill" Height="214" Margin="40,65,0,0" VerticalAlignment="Top" Width="344" 
+               RenderTransformOrigin="0.513,0.54" MouseRightButtonDown="Ibx_img1_MouseLeftButtonUp"  Source="{Binding image}" RenderOptions.BitmapScalingMode="Fant" />
+                    <Image  x:Name="Ibx_img12" HorizontalAlignment="Left" Stretch="Fill" Height="214" Margin="456,65,0,0" VerticalAlignment="Top" Width="344" 
+                RenderTransformOrigin="0.513,0.54" MouseLeftButtonUp="Ibx_img12_MouseLeftButtonUp" Source="{Binding mapimage}" RenderOptions.BitmapScalingMode="Fant" />
+                    <Label x:Name="NameOfPlace1" Content="Name Of Place" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Width="485" FontSize="18" FontWeight="Bold"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+
+                    <StackPanel Orientation="Vertical">
+
+                        <TextBlock FontSize="18" Text="Gallery" />
+                    </StackPanel>
+
+                </TabItem.Header>
+                <Grid>
+       
+
+
+                    <Label x:Name="NameOfPlace" Content="Name Of Place" HorizontalAlignment="Left" Margin="28,10,0,0" VerticalAlignment="Top" Width="435" FontSize="18" FontWeight="Bold" Height="34"/>
+
+                    <Image Width="450" Height="400"  Source="images/hill1.jpg" Name="Img_gallery" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="206,109,178,74" Visibility="Hidden"/>
+                    <Button  HorizontalAlignment="Left" Margin="206,280,0,233" Width="40" Click="Button_Click_Back" RenderTransformOrigin="0.5,0.5"
+                    Name="btnGallery_ScrollBack" Visibility="Hidden">
+
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/back.png"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button  HorizontalAlignment="Right" Margin="0,280,178,233" Width="40" Click="Button_Click_Next" Name="btnGallery_ScrollNext" Visibility="Hidden" RenderTransformOrigin="0.725,0.8">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/next.png"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
 
 
 
-  </Grid>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="18" Text="Maps" />
+                    </StackPanel>
+
+
+                </TabItem.Header>
+                <Grid>
+                    <WebBrowser Name="Wbx_locations" PreviewKeyDown="WebBrowser_PreviewKeyDown"></WebBrowser>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
 </Window>

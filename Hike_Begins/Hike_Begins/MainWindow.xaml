@@ -7,30 +7,34 @@
         Loaded="Window_Loaded"
         mc:Ignorable="d" ResizeMode="NoResize"
         xmlns:p="clr-namespace:Hike_Begins.Properties"
-        Title="{x:Static p:Resources.Title}" Height="350" Width="500">
-  <Grid>
-    <Label Content="{x:Static p:Resources.Header}" HorizontalAlignment="Left" FontSize="25" FontWeight="Bold" FontStyle="Italic" Margin="168,10,0,0" VerticalAlignment="Top" Foreground="#FF38801D"/>
+        Title="{x:Static p:Resources.Title}" Height="425" Width="600">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Hiking Spots Germany" HorizontalAlignment="Left" FontSize="25" FontWeight="Bold" FontStyle="Italic" Margin="17,10,0,0" VerticalAlignment="Top" Foreground="#FF38801D" Width="274"/>
 
 
-    <TextBox x:Name="Tbx_name" HorizontalAlignment="Left" Height="23" Margin="10,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Enter Hiking Name" 
-             TextChanged="Tbx_filter_TextChanged"  Width="158"/>
-    <DataGrid x:Name="Grd_spots" HorizontalAlignment="Left" Height="174" Margin="10,135,0,0"
-              MouseDoubleClick="Grd_spots_DoubleClick" VerticalAlignment="Top" Width="462" AutoGenerateColumns="False" IsReadOnly="True">
-      <!-- SelectionChanged="Grd_spots_SelectionChanged" -->
-      <DataGrid.Columns>
-        <DataGridTextColumn Header="Name" Width="*" Binding="{Binding name}" ></DataGridTextColumn>
-        <DataGridTextColumn Header="Difficulty" Width="*" Binding="{Binding difficulty}"></DataGridTextColumn>
-        <DataGridTextColumn Header="Duration" Width="*" Binding="{Binding duration}"></DataGridTextColumn>
-      </DataGrid.Columns>
-    </DataGrid>
-    <Image HorizontalAlignment="Left" Height="43" Margin="126,10,0,0" VerticalAlignment="Top" Width="42" Source="images/hills.png"/>
-    <Label FontSize="20" Content="Heidelberg" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Left" Margin="181,53,0,0" VerticalAlignment="Top"/>
-    <RadioButton Content="English" HorizontalAlignment="Left" Height="18" Margin="417,10,0,0" VerticalAlignment="Top" Width="67" IsChecked="True" Checked="English_Language_Radio"/>
+        <TextBox x:Name="Tbx_name"  HorizontalAlignment="Left" Height="23" Margin="79,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Enter Hiking Name" 
+             KeyUp="Tbx_filter_TextChanged"  Width="158"/>
+        <DataGrid x:Name="Grd_spots" HorizontalAlignment="Left" Height="224" Margin="10,150,0,0"
+              MouseDoubleClick="Grd_spots_DoubleClick" VerticalAlignment="Top" Width="551" AutoGenerateColumns="False" IsReadOnly="True">
+            <!-- SelectionChanged="Grd_spots_SelectionChanged" -->
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Width="320" Binding="{Binding name}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Difficulty" Width="*" Binding="{Binding difficulty}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Duration" Width="*" Binding="{Binding duration}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Image HorizontalAlignment="Left" Height="111" Margin="369,31,0,0" VerticalAlignment="Top" Width="113" Source="images/hills.png" RenderTransformOrigin="-0.321,0.907"/>
+
+
+        <Label FontSize="12" Content="Place"   HorizontalAlignment="Left" Margin="17,58,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.637,0.5" Width="57"/>
+        <Label FontSize="12" Content="Difficulty :"   HorizontalAlignment="Left" Margin="17,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.637,0.5" Width="57"/>
+        <Label FontSize="12" Content="Duration :"   HorizontalAlignment="Left" Margin="17,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.637,0.5" Width="57"/>
+
+        <!--<RadioButton Content="English" HorizontalAlignment="Left" Height="18" Margin="417,10,0,0" VerticalAlignment="Top" Width="67" IsChecked="True" Checked="English_Language_Radio"/>
     <RadioButton Content="Kannada" HorizontalAlignment="Left" Height="22" Margin="417,28,0,0" VerticalAlignment="Top" Width="67" Checked="Kannada_Language_Radio"/>
-    <Button Content="Clear Filter" HorizontalAlignment="Left" Margin="398,112,0,0" VerticalAlignment="Top" Width="74" Height="23" Click="btn_Search_Click" RenderTransformOrigin="-0.03,0.731"/>
-    <TextBox x:Name="Tbx_Search_Difficulty" HorizontalAlignment="Left" Height="23" Margin="168,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Enter Hiking Duration" 
-      TextChanged="Tbx_filter_TextChanged"  Width="149"/>
-    <TextBox x:Name="Tbx_Search_Duration" HorizontalAlignment="Left" Height="23" Margin="317,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Enter Hiking Duration" 
-      TextChanged="Tbx_filter_TextChanged"  Width="81" />
-  </Grid>
+    <Button Content="Clear Filter" HorizontalAlignment="Left" Margin="398,112,0,0" VerticalAlignment="Top" Width="74" Height="23" Click="btn_Search_Click" RenderTransformOrigin="-0.03,0.731"/>-->
+        <TextBox x:Name="Tbx_Search_Duration" HorizontalAlignment="Left" Height="23" Margin="79,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Enter Hiking Duration" 
+      KeyUp="Tbx_filter_TextChanged"  Width="158" />
+        <ComboBox x:Name="Combo_Difficulty" HorizontalAlignment="Left" Margin="79,92,0,0" VerticalAlignment="Top" Width="158" SelectionChanged="Combo_Difficulty_SelectionChanged" />
+    </Grid>
 </Window>
